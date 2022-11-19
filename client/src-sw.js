@@ -1,4 +1,4 @@
-const { offlineFallback, warmStrategyCache } = require('workbox-recipes');
+const { warmStrategyCache } = require('workbox-recipes');
 const { CacheFirst } = require('workbox-strategies');
 const { registerRoute } = require('workbox-routing');
 const { StaleWhileRevalidate } = require('workbox-strategies');
@@ -16,11 +16,10 @@ const pageCache = new CacheFirst({
     }),
     new ExpirationPlugin({
       maxAgeSeconds: 30 * 24 * 60 * 60,
-    }),
+    }), 
   ],
 });
 
-offlineFallback();
 
 warmStrategyCache({
   urls: ['/index.html', '/'],
