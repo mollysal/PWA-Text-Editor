@@ -1,6 +1,6 @@
 # PWA-Text-Editor
 
-Deployed App: 
+Deployed App: https://jate-ms.herokuapp.com/
 
 ## Description
 The goal of this assignment is to create a text editor that runs within a web browser. The application can be downloaded & installed to work offline. This app meets PWA (progressive web application) criteria. 
