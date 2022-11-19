@@ -2,16 +2,22 @@
 
 Deployed App: 
 
-## Table of Contents
-
 ## Description
-The goal of this assignment is to create a text editor that runs within a web browser. This app meets PWA (progressive web application) criteria. 
+The goal of this assignment is to create a text editor that runs within a web browser. The application can be downloaded & installed to work offline. This app meets PWA (progressive web application) criteria. 
+### Installed App
+![Demo of the Installed Application](./Assets/JATE_Installed_App.png)
+
+### Service Worker
+![Chrome DevTools Service Worker](./Assets/Service_Worker_Chrome-Dev.png)
+### Manifest JSON
+![Chrome DevTools Manifest JSON](./Assets/Manifest_JSON_Chrome-Dev.png)
 
 ## Usage
 ```
 npm i
-npm run start
+npm run start:dev
 ```
+Note: this app is running on Localhost:3002
 
 ## User Store
 ```md
@@ -56,4 +62,4 @@ THEN I should have proper build scripts for a webpack application
 
 ## Credit
 * Starter Code provided by UofM BootCamp
-* 
+* UofM Learning Assistants 
