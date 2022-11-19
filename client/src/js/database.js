@@ -23,7 +23,7 @@ export const putDb = async (content) => {
 };
 
 // TODO: Add logic for a method that gets all the content from the database
-export const getDb = async () => {
+export const getDb = async (id) => {
   console.log('GET from the database');
 
   // Create a connection to the database database and version we want to use.
@@ -33,7 +33,7 @@ export const getDb = async () => {
   const tx = jateDb.transaction('jate', 'readonly');
 
   // Open up the desired object store.
-  const store = jateDb.objectStore('jate');
+  const store = tx.objectStore('jate');
 
   // Use the .getAll() method to get all 1 in the database.
   const request = store.All();
